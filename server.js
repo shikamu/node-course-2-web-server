@@ -35,6 +35,11 @@ app.get("/", function (request, response) {
         welcomeMessage: "Welcome to my website!"
     });
 });
+app.get("/projects", function (req, res) {
+    res.render("projects.hbs", {
+        pageTitle: "Portfolio"
+    });
+});
 app.get("/about", function (req, res) {
     res.render("about.hbs", {
         pageTitle: "About Page"
